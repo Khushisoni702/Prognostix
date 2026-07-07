@@ -12,7 +12,7 @@
 
 *Predictive maintenance of industrial bearings using attention-based deep learning with explainability*
 
-Live Demo - 
+Live Demo - https://prognostix.streamlit.app/
 
 </div>
 
