@@ -183,15 +183,18 @@ INPUT_LENGTH = 2048
 SAMPLING_RATE = 48000
 BATCH_SIZE = 32
 
-# Model paths
-MODEL_PATH = "best_model.pth"
+# Base directory of app.py
+BASE_DIR = Path(__file__).resolve().parent
+
+# Model path
+MODEL_PATH = BASE_DIR / "best_model.pth"
 
 # Demo MAT file paths
 DEMO_MAT_PATHS = {
-    "Normal Operation": r"C:\Users\HP\Downloads\PROGNOSTIX\Samples\demo_normal.mat",
-    "Ball Fault": r"C:\Users\HP\Downloads\PROGNOSTIX\Samples\demo_ball.mat",
-    "Inner Race Fault": r"C:\Users\HP\Downloads\PROGNOSTIX\Samples\demo_inner.mat",
-    "Outer Race Fault": r"C:\Users\HP\Downloads\PROGNOSTIX\Samples\demo_outer.mat"
+    "Normal Operation": BASE_DIR / "Samples" / "demo_normal.mat",
+    "Ball Fault": BASE_DIR / "Samples" / "demo_ball.mat",
+    "Inner Race Fault": BASE_DIR / "Samples" / "demo_inner.mat",
+    "Outer Race Fault": BASE_DIR / "Samples" / "demo_outer.mat",
 }
 
 # ============================================================================
